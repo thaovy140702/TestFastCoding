@@ -3,7 +3,185 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Shopery</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="margin-cont flex-cont">
+          <div class="address-cont">
+            <img src="./assets/icons/map_pin.svg" alt="location icon" />
+            <address>
+              Store Location: Lincoln- 344, Illinois, Chicago, USA
+            </address>
+          </div>
+          <div class="right-header">
+            <div class="dropdown">
+              <button>
+                Eng
+                <img
+                  src="./assets/icons/up_top_header.svg"
+                  alt="toggle button"
+                />
+              </button>
+              <div class="dropdown-content">
+                <a href="">Vietnamese</a>
+                <a href="">Japanese</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button>
+                USD
+                <img
+                  src="./assets/icons/up_top_header.svg"
+                  alt="toggle button"
+                />
+              </button>
+              <div class="dropdown-content">
+                <a href="">VND</a>
+              </div>
+            </div>
+
+            <div class="vertical-divider"></div>
+
+            <div class="authen-cont">
+              <a href="">Sign In</a>
+              <span>/</span>
+              <a href="">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-header margin-cont">
+        <div class="logo">
+          <img src="./assets/icons/logo_plant_1.jpg" alt="shopery logo" />
+          <a href="">Ecobazar</a>
+        </div>
+
+        <div class="search-box">
+          <div class="search-input">
+            <img
+              src="./assets/icons/search.svg"
+              alt="search icon"
+              class="search-icon"
+            />
+            <input type="text" placeholder="Search" />
+          </div>
+          <button class="search-button">Search</button>
+        </div>
+
+        <div class="shopping-cart">
+          <img src="./assets/icons/heart.svg" alt="heart icon" />
+          <div class="vertical-divider"></div>
+          <img src="./assets/icons/cart.svg" alt="cart icon" />
+          <div class="shopping-cart-info">
+            <p class="shopping-cart-title">Shopping cart</p>
+            <span class="price">$57.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-navigation-cont">
+        <div class="main-navigation margin-cont">
+          <div class="navbar">
+            <a href="" class="active">Home</a>
+
+            <div class="dropdown">
+              <button>
+                Shop
+                <img
+                  src="./assets/icons/chevron_down.svg"
+                  alt="toggle button"
+                />
+              </button>
+              <div class="dropdown-content">
+                <a href="">Shop 01</a>
+                <a href="">Shop 02</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button>
+                Pages
+                <img
+                  src="./assets/icons/chevron_down.svg"
+                  alt="toggle button"
+                />
+              </button>
+              <div class="dropdown-content">
+                <a href="">Page 01</a>
+                <a href="">Page 02</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button>
+                Blog
+                <img
+                  src="./assets/icons/chevron_down.svg"
+                  alt="toggle button"
+                />
+              </button>
+              <div class="dropdown-content">
+                <a href="">Blog List</a>
+                <a href="">Sigle Blog</a>
+              </div>
+            </div>
+
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+          </div>
+
+          <div class="contact-info">
+            <img src="./assets/icons/phone_call-1.svg" alt="phone icon" />
+            <p>(219) 555-0114</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="margin-cont">
+      <div class="banner-cont">
+        <div class="left-banner">
+          <img
+            src="./assets/images/banner_big.jpg"
+            alt="fresh and healthy food banner "
+          />
+
+          <div class="banner-text">
+            <h1>
+              Fresh & Healthy <br />
+              Organic Food
+            </h1>
+          </div>
+        </div>
+
+        <div class="right-banner">
+          <div class="small-banner">
+            <img src="./assets/images/banner.jpg" alt="summer sale banner " />
+          </div>
+          <div class="small-banner">
+            <img
+              src="./assets/images/banner_2.jpg"
+              alt="special product banner "
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
