@@ -330,8 +330,8 @@ span {
 }
 
 .left-banner .banner-text h1 {
-  font-size: clamp(2rem, 5vw, 4.8rem);
   /* font-size: 4.8rem; */
+  font-size: 3.5vw;
   font-weight: 600;
   color: var(--color-white);
   text-transform: capitalize;
@@ -364,8 +364,7 @@ span {
 }
 
 .banner-text-info-cont .sale-up p {
-  /* font-size: 2rem; */
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-size: 2vw;
   font-weight: 500;
   color: var(--color-white);
 }
@@ -375,8 +374,7 @@ span {
   padding: 0.4rem 1.2rem;
   border: none;
   background-color: var(--color-warning);
-  /* font-size: 2rem; */
-  font-size: clamp(1rem, 2.3vw, 1.4rem);
+  font-size: 2vw;
   font-weight: 600;
   color: var(--color-white);
   cursor: pointer;
@@ -384,7 +382,7 @@ span {
 }
 
 .banner-text-info-cont p {
-  font-size: 1.4rem;
+  font-size: 1.4vw;
   color: var(--color-white);
 }
 
@@ -402,11 +400,24 @@ span {
   gap: 1.6rem;
 }
 
+.shop-now-btn-banner,
 .shop-now-btn {
-  margin-top: 2.8rem;
+  margin-top: 2vw;
   background-color: var(--color-white);
   color: var(--color-primary);
   border: 1px var(--color-white);
+  font-size: 1.4vw;
+  padding: 1rem 2rem;
+}
+
+.shop-now-btn-banner {
+  padding: 1vw 2vw;
+  gap: 1vw;
+}
+
+.shop-now-btn-discount {
+  padding: 1vw 2vw;
+  gap: 1vw;
 }
 
 .small-banner .top-banner-text {
@@ -468,7 +479,7 @@ h2 {
 }
 
 .bottom-banner-text h2 {
-  font-size: 3.2rem;
+  font-size: 2.3vw;
   font-weight: 600;
 }
 
@@ -944,7 +955,7 @@ h2 {
   right: 5%;
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 1rem;
   height: 50%;
   text-align: left;
   justify-content: space-between;
@@ -953,21 +964,21 @@ h2 {
 
 .sale-title {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.2vw;
 }
 
 .highlight {
   color: var(--color-warning);
-  font-size: 5rem;
+  font-size: 3.5vw;
   font-weight: 600;
 }
 
 .summer-sale-banner .banner-text h2 {
-  font-size: 5rem;
+  font-size: 3.5vw;
 }
 
 .desc {
-  font-size: 1.6rem;
+  font-size: 1.2vw;
   font-weight: 400;
 }
 
@@ -976,7 +987,9 @@ h2 {
   background-color: var(--color-primary);
   color: var(--color-white);
   border: none;
-  padding: 1.6rem auto;
+  padding: 1vw 2vw;
+  font-size: 1.4vw;
+  gap: 1vw;
 }
 
 /* --------- */
