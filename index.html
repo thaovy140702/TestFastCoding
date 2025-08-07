@@ -13,6 +13,11 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <title>Shopery</title>
   </head>
   <body>
@@ -26,34 +31,35 @@
             </address>
           </div>
           <div class="right-header">
-            <div class="dropdown">
-              <button>
-                Eng
-                <img
-                  src="./assets/icons/up_top_header.svg"
-                  alt="toggle button"
-                />
-              </button>
-              <div class="dropdown-content">
-                <a href="">Vietnamese</a>
-                <a href="">Japanese</a>
+            <div class="setting-cont">
+              <div class="dropdown">
+                <button>
+                  Eng
+                  <img
+                    src="./assets/icons/up_top_header.svg"
+                    alt="toggle button"
+                  />
+                </button>
+                <div class="dropdown-content">
+                  <a href="">Vietnamese</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button>
+                  USD
+                  <img
+                    src="./assets/icons/up_top_header.svg"
+                    alt="toggle button"
+                  />
+                </button>
+                <div class="dropdown-content">
+                  <a href="">VND</a>
+                </div>
               </div>
             </div>
 
-            <div class="dropdown">
-              <button>
-                USD
-                <img
-                  src="./assets/icons/up_top_header.svg"
-                  alt="toggle button"
-                />
-              </button>
-              <div class="dropdown-content">
-                <a href="">VND</a>
-              </div>
-            </div>
-
-            <div class="vertical-divider"></div>
+            <div class="vertical-divider top-header-divider"></div>
 
             <div class="authen-cont">
               <a href="">Sign In</a>
@@ -66,6 +72,7 @@
 
       <div class="bottom-header margin-cont">
         <div class="logo">
+          <i class="fa-solid fa-bars"></i>
           <img src="./assets/icons/logo_plant_1.jpg" alt="shopery logo" />
           <a href="">Ecobazar</a>
         </div>
@@ -84,7 +91,7 @@
 
         <div class="shopping-cart">
           <img src="./assets/icons/heart.svg" alt="heart icon" />
-          <div class="vertical-divider"></div>
+          <div class="vertical-divider topnav-divider"></div>
           <img src="./assets/icons/cart.svg" alt="cart icon" />
           <div class="shopping-cart-info">
             <p class="shopping-cart-title">Shopping cart</p>
@@ -92,6 +99,8 @@
           </div>
         </div>
       </div>
+
+      <div class="horizontal-divider navigation-divider"></div>
 
       <div class="main-navigation-cont">
         <div class="main-navigation margin-cont">
@@ -152,34 +161,1411 @@
       </div>
     </header>
 
-    <main class="margin-cont">
-      <div class="banner-cont">
-        <div class="left-banner">
-          <img
-            src="./assets/images/banner_big.jpg"
-            alt="fresh and healthy food banner "
-          />
+    <div class="horizontal-divider navigation-divider"></div>
 
-          <div class="banner-text">
-            <h1>
-              Fresh & Healthy <br />
-              Organic Food
-            </h1>
-          </div>
-        </div>
-
-        <div class="right-banner">
-          <div class="small-banner">
-            <img src="./assets/images/banner.jpg" alt="summer sale banner " />
-          </div>
-          <div class="small-banner">
+    <main>
+      <div class="margin-cont">
+        <div class="banner-cont">
+          <div class="left-banner">
             <img
-              src="./assets/images/banner_2.jpg"
-              alt="special product banner "
+              src="./assets/images/banner_big.jpg"
+              alt="fresh and healthy food banner "
             />
+
+            <div class="banner-text">
+              <h1>
+                Fresh & Healthy <br />
+                Organic Food
+              </h1>
+
+              <div class="banner-text-info">
+                <div class="vertical-divider banner-text-divider"></div>
+                <div class="banner-text-info-cont">
+                  <div class="sale-up">
+                    <p>Sale up to</p>
+                    <button>30% OFF</button>
+                  </div>
+                  <p>Free shipping on all your order.</p>
+                </div>
+              </div>
+
+              <button class="medium-btn shop-now-btn">
+                Shop Now
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="right-banner">
+            <div class="small-banner">
+              <img src="./assets/images/banner.jpg" alt="summer sale banner " />
+              <div class="top-banner-text">
+                <h2 class="summer-sale-text">summer sale</h2>
+                <span class="sale-off">75% OFF</span>
+                <p>Only Fruit & Vegetable</p>
+                <button class="medium-btn btn-no-background">
+                  Shop Now
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="overlay"></div>
+            </div>
+
+            <div class="small-banner">
+              <img
+                src="./assets/images/banner_2.jpg"
+                alt="special product banner "
+              />
+
+              <div class="bottom-banner-text">
+                <p>Best deal</p>
+                <h2>
+                  Special Products <br />
+                  Deal of the Month
+                </h2>
+                <button class="medium-btn btn-no-background">
+                  Shop Now
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+
+        <section class="features">
+          <div class="feature-item">
+            <img
+              src="./assets/icons/delivery-truck(5).png"
+              alt="feature icon"
+            />
+            <div class="feature-content">
+              <h3>Free Shipping</h3>
+              <p>Free shipping on all your order</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img
+              src="./assets/icons/delivery-truck(4).png"
+              alt="feature icon"
+            />
+            <div class="feature-content">
+              <h3>Customer Support 24/7</h3>
+              <p>Instant access to Support</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img
+              src="./assets/icons/delivery-truck(7).png"
+              alt="feature icon"
+            />
+            <div class="feature-content">
+              <h3>100% Secure Payment</h3>
+              <p>We ensure your money is save</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img
+              src="./assets/icons/delivery-truck(6).png"
+              alt="feature icon"
+            />
+            <div class="feature-content">
+              <h3>Money-Back Guarantee</h3>
+              <p>30 Days Money-Back Guarantee</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="categories">
+          <div class="title">
+            <h2 class="sub-title">Popular Categories</h2>
+            <button class="medium-btn btn-no-background">
+              View All
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="categories-list">
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1-1.jpg"
+                alt="fresh fruit image"
+              />
+              Fresh fruit
+            </div>
+
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1-3.jpg"
+                alt="fresh fruit image"
+              />
+              Fresh Vegetables
+            </div>
+
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1-5.jpg"
+                alt="fresh fruit image"
+              />
+              Meat & Fish
+            </div>
+
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1-7.jpg"
+                alt="fresh fruit image"
+              />
+              Snacks
+            </div>
+
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1-8.jpg"
+                alt="fresh fruit image"
+              />
+              Beverages
+            </div>
+
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1-11.jpg"
+                alt="fresh fruit image"
+              />
+              Beauty & Health
+            </div>
+
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1-2.jpg"
+                alt="fresh fruit image"
+              />
+              Bread & Bakery
+            </div>
+
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1-4.jpg"
+                alt="fresh fruit image"
+              />
+              Baking Needs
+            </div>
+
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1-6.jpg"
+                alt="fresh fruit image"
+              />
+              Cooking
+            </div>
+
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1.jpg"
+                alt="fresh fruit image"
+              />
+              Diabetic Food
+            </div>
+
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1-9.jpg"
+                alt="fresh fruit image"
+              />
+              Dish Detergents
+            </div>
+
+            <div class="category-item">
+              <img
+                src="./assets/images/categories/image 1-10.jpg"
+                alt="fresh fruit image"
+              />
+              Oil
+            </div>
+          </div>
+        </section>
+
+        <section class="popular-products">
+          <div class="title">
+            <h2 class="sub-title">Popular Products</h2>
+            <button class="medium-btn btn-no-background">
+              View All
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="products-list">
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image.jpg"
+                alt="product image"
+              />
+
+              <div class="sale-tag">Sale <span class="price">$50</span></div>
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Green Apple</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                    <span class="original-price">$20.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-1.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Fresh Indian Malta</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-9.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Chinese cabbage</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-5.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Green Lettuce</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-7.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Eggplant</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-3.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Big Potatoes</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-2.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Corn</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-4.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Fresh Cauliflower</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-6.jpg"
+                alt="product image"
+              />
+
+              <div class="sale-tag">Sale <span class="price">$50</span></div>
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Green Capsicum</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                    <span class="original-price">$20.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-8.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Green Chili</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="discount-banner">
+          <div class="sub-banner">
+            <img
+              src="./assets/images/banner_discount_1.jpg"
+              alt="banner discount"
+            />
+            <div class="discount-banner-text">
+              <p class="white-text">Best Deals</p>
+              <h2>Sale of the Month</h2>
+              <div class="timer-cont">
+                <div class="timer">
+                  <span>00</span>
+                  <p>days</p>
+                </div>
+
+                <p>:</p>
+
+                <div class="timer">
+                  <span>02</span>
+                  <p>hours</p>
+                </div>
+
+                <p>:</p>
+
+                <div class="timer">
+                  <span>18</span>
+                  <p>mins</p>
+                </div>
+
+                <p>:</p>
+
+                <div class="timer">
+                  <span>16</span>
+                  <p>secs</p>
+                </div>
+              </div>
+              <button class="medium-btn shop-now-btn">
+                Shop Now
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="sub-banner">
+            <img
+              src="./assets/images/banner_discount_3.jpg"
+              alt="banner discount"
+            />
+            <div class="discount-banner-text">
+              <p class="white-text">85% fat free</p>
+              <h2>Low-Fat Meat</h2>
+              <div class="discount-text">
+                Started at <span class="price danger-text">$79.99</span>
+              </div>
+              <button class="medium-btn shop-now-btn">
+                Shop Now
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="sub-banner">
+            <img
+              src="./assets/images/banner_discount_2.jpg"
+              alt="banner discount"
+            />
+            <div class="discount-banner-text">
+              <p class="dark-text">summer sale</p>
+              <h2>100% Fresh Fruit</h2>
+              <div class="sale-text-cont">
+                Up to <span class="sale-tag-banner">64% OFF</span>
+              </div>
+              <button class="medium-btn shop-now-btn">
+                Shop Now
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
+
+      <section class="hotdeals-cont">
+        <div class="margin-cont">
+          <div class="title">
+            <h2 class="sub-title">Hot Deals</h2>
+            <button class="medium-btn btn-no-background">
+              View All
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="hot-deals-product-list">
+            <div class="product-item hot-deal-product">
+              <img
+                src="./assets/images/products/Image-10.jpg"
+                alt="product image"
+              />
+
+              <div class="sale-tag-cont">
+                <div class="sale-tag-product danger-tag">
+                  Sale <span class="price white-text">$50</span>
+                </div>
+                <div class="sale-tag-product blue-tag">Best Sale</div>
+              </div>
+
+              <div class="featured-favorite-cont">
+                <div class="featured-favorite-icon">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <button class="medium-btn">
+                  Add to Cart
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+
+                <div class="featured-favorite-icon">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="hot-deal-product-info">
+                <h3 class="product-name feature-product-name">Green Apples</h3>
+                <div>
+                  <span class="price">$14.99</span>
+                  <span class="original-price">$20.99</span>
+                </div>
+
+                <div class="rating-cont">
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p>(524 Feedback)</p>
+                </div>
+
+                <p>Hurry up! Offer ends In:</p>
+                <div class="timer-cont">
+                  <div class="timer">
+                    <span>00</span>
+                    <p>days</p>
+                  </div>
+
+                  <p>:</p>
+
+                  <div class="timer">
+                    <span>02</span>
+                    <p>hours</p>
+                  </div>
+
+                  <p>:</p>
+
+                  <div class="timer">
+                    <span>18</span>
+                    <p>mins</p>
+                  </div>
+
+                  <p>:</p>
+
+                  <div class="timer">
+                    <span>16</span>
+                    <p>secs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-9.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Chinese cabbage</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-5.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Green Lettuce</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-7.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Eggplant</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-4.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Fresh Cauliflower</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-6.jpg"
+                alt="product image"
+              />
+
+              <div class="sale-tag">Sale <span class="price">$50</span></div>
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Green Capsicum</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                    <span class="original-price">$20.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-8.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Green Chili</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-3.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Big Potatoes</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-2.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Corn</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-11.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Red Chili</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-12.jpg"
+                alt="product image"
+              />
+
+              <div class="sale-tag">Sale <span class="price">$50</span></div>
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Red Tomatos</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                    <span class="original-price">$20.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <img
+                src="./assets/images/products/Image-13.jpg"
+                alt="product image"
+              />
+
+              <div class="favorite-cont">
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="favorite-icon-cont">
+                  <i class="fa-regular fa-eye"></i>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <div class="product-description">
+                  <h3 class="product-name">Surjapur Mango</h3>
+                  <div>
+                    <span class="price">$14.99</span>
+                  </div>
+
+                  <div class="rating">
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star filled"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="add-cart-cont">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="summer-sale-banner margin-cont">
+        <img src="./assets/images/banner-3.jpg" alt="summer sale banner" />
+        <div class="banner-text">
+          <p class="sale-title">SUMMER SALE</p>
+          <h2><span class="highlight">37%</span> OFF</h2>
+          <p class="desc">
+            Free on all your order, Free Shipping and 30 days <br />
+            money-back guarantee
+          </p>
+          <button class="medium-btn">
+            Shop Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="margin-cont">
+        <div class="title">
+          <h2 class="sub-title">Featured Products</h2>
+          <button class="medium-btn btn-no-background">
+            View All
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="products-list">
+          <div class="product-item">
+            <img src="./assets/images/products/Image.jpg" alt="product image" />
+
+            <div class="sale-tag">Sale <span class="price">$50</span></div>
+            <div class="favorite-cont">
+              <div class="favorite-icon-cont">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="favorite-icon-cont">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-description">
+                <h3 class="product-name">Green Apple</h3>
+                <div>
+                  <span class="price">$14.99</span>
+                  <span class="original-price">$20.99</span>
+                </div>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <div class="add-cart-cont">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img
+              src="./assets/images/products/Image-1.jpg"
+              alt="product image"
+            />
+
+            <div class="favorite-cont">
+              <div class="favorite-icon-cont">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="favorite-icon-cont">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-description">
+                <h3 class="product-name">Fresh Indian Malta</h3>
+                <div>
+                  <span class="price">$14.99</span>
+                </div>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <div class="add-cart-cont">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img
+              src="./assets/images/products/Image-9.jpg"
+              alt="product image"
+            />
+
+            <div class="favorite-cont">
+              <div class="favorite-icon-cont">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="favorite-icon-cont">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-description">
+                <h3 class="product-name">Chinese cabbage</h3>
+                <div>
+                  <span class="price">$14.99</span>
+                </div>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <div class="add-cart-cont">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img
+              src="./assets/images/products/Image-5.jpg"
+              alt="product image"
+            />
+
+            <div class="favorite-cont">
+              <div class="favorite-icon-cont">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="favorite-icon-cont">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-description">
+                <h3 class="product-name">Green Lettuce</h3>
+                <div>
+                  <span class="price">$14.99</span>
+                </div>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <div class="add-cart-cont">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img
+              src="./assets/images/products/Image-7.jpg"
+              alt="product image"
+            />
+
+            <div class="favorite-cont">
+              <div class="favorite-icon-cont">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="favorite-icon-cont">
+                <i class="fa-regular fa-eye"></i>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-description">
+                <h3 class="product-name">Eggplant</h3>
+                <div>
+                  <span class="price">$14.99</span>
+                </div>
+
+                <div class="rating">
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star filled"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <div class="add-cart-cont">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
